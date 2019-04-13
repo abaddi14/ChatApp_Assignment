@@ -20,13 +20,11 @@ main {
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
-
 .messages {
 	flex: 2;
 	background-color: #eee;
 	border: 6px solid #e2e0e0;
 }
-
 input, textarea {
 	display: block;
 	width: 100%;
@@ -38,9 +36,6 @@ input, textarea {
 }
 
 textarea { height: 135px; }
-
-
-
 form {
 	padding: 3px;
 	margin: 12px auto;
