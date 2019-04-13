@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Socket IO Chat with Node!</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<script src="https://unpkg.com/vue"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+	<main id="app">
+		<section class="form-container">
+			<label for="nickname">Your Name:</label>
+			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="Your Nickname">
+
+			<form>
+				<label for="message">Your Message:</label>
+				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+				<input type="submit" @click.prevent="dispatchMessage">
+
+			</form>
+<a id="sun" href="#" ><i id="sun2" class="far fa-sun" onclick="removeNightMode()"></i></a>
+			<a id="moon" href="#" ><i id="moon2" class="far fa-moon" onclick="addNightMode()"></i></a>
+
+
+		</section>
+
+		<section class="messages">
+			<ul id="messages" v-for="message in messages">
+      <newmessage :msg="message" class="animated bounceInRight"></newmessage>
+			</ul>
+		</section>
+	</main>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="module" src="js/main_vm.js"></script>
+	<script src="gulpfile.js"></script>
+	<script src="js/nightMode.js"></script>
+
+
+</body>
+</html>

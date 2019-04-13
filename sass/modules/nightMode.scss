@@ -1,0 +1,73 @@
+.Nightmode{
+form {
+	input[type=submit] {
+		background-color:#000000;
+	}
+}
+
+.form-container {
+	border: 5px solid #252869;
+	background-color: #3e4264;
+
+	label { display: block; margin-bottom: 0.5rem; }
+}
+
+.messages {
+	flex: 2;
+	background-color: rgb(20, 53, 38);
+	border: 5px solid #000000;
+}
+
+input, textarea {
+	border: 2px solid #828e94;
+}
+
+#messages {
+	li:nth-child(odd) { background: rgb(110, 110, 110); }
+}
+
+#moon i {
+	font-size: 3em;
+	color: grey;
+	margin-left: 30%;
+	margin-top: 45%;
+}
+
+#sun i {
+	font-size: 3em;
+	color: grey;
+	margin-left: 30%;
+	margin-top: 45%;
+}
+
+#nickname, #textarea {
+    background-color: #828e94;
+}
+
+#nickname::placeholder{
+    color: black;
+}
+
+label {
+    color: white;
+}
+
+.new-message {
+	span {
+		display: block;
+		margin-bottom: 2px;
+	}
+	background-color: black;
+	color: grey;
+
+}
+
+.my-message {
+    background-color: #446868;
+    color: white;
+}
+
+
+
+
+}
